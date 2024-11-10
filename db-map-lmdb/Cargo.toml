@@ -1,0 +1,16 @@
+[package]
+name = "db-map-lmdb"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+anyhow = "1.0.89"
+db-map-trait = { path = "../db-map-trait" }
+libc = "0.2.158"
+lmdb-rkv = "0.14.0"
+lmdb-rkv-sys = "0.11.2"
+tempfile = "3.12.0"
+
+[dev-dependencies]
+db-map-test = { path = "../db-map-test" }
+proptest = "1.5.0"

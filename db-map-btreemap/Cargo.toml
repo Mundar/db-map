@@ -1,0 +1,19 @@
+[package]
+name = "db-map-btreemap"
+version = "0.1.0"
+edition = "2021"
+authors = ["Thomas Mundar <thomas@mundar.com>"]
+license = "MIT"
+readme = "README.md"
+repository = "https://github.com/Mundar/db-map"
+keywords = ["DBMap", "BTreeMap"]
+categories = ["database-implementations"]
+description = "Implement the DBKey trait (from db-map-trait) with std::collections::BTreeMap. Used for testing."
+
+[dependencies]
+db-map-trait = { path = "../db-map-trait" }
+parking_lot = "0.12.3"
+
+[dev-dependencies]
+db-map-test = { path = "../db-map-test" }
+proptest = "1.5.0"

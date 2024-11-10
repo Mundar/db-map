@@ -1,0 +1,8 @@
+[workspace]
+members = [
+    "db-map-trait",
+    "db-map-btreemap",
+    "db-map-lmdb",
+    "db-map-test",
+]
+resolver = "2"

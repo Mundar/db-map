@@ -1,0 +1,19 @@
+[package]
+name = "db-map-trait"
+version = "0.1.0"
+edition = "2021"
+authors = ["Thomas Mundar <thomas@mundar.com>"]
+license = "MIT"
+readme = "README.md"
+repository = "https://github.com/Mundar/db-map-trait"
+keywords = ["LMDB", "BTreeMap"]
+categories = ["database-implementations"]
+description = "Provides an interface similar to BTreeMap<[u8], [u8]> for key-value databases"
+
+[dependencies]
+anyhow = "1.0.89"
+thiserror = "1.0.63"
+
+[dev-dependencies]
+db-map-btreemap = { path = "../db-map-btreemap" }
+proptest = "1.5.0"
